@@ -1,28 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
- * main -Program that determins the status of an input
- *
- * Return: Always 0 (Success)
+ * main - printing a line with puts function
+ * Return: 0
  */
 int main(void)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
-	return (0);
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
