@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main -Program that determins the status of an input
- *
+ * main - Prints a random number and states whether
+ *        it is positive, negative, or zero.
  * Return: Always 0 (Success)
  */
 int main(void)
