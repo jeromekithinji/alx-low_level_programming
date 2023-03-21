@@ -5,9 +5,10 @@
  * @ch: The character to be checked
  * Return: Return 1 for lowercase or 0 for anything else
  */
-int _isLower(char ch)
+
+int _isLower(int ch)
 {
-if (ch >= 'a' && ch <= 'z')
+if (ch >= 97 && ch <= 122)
 return (1);
 else
 return (0);
