@@ -5,7 +5,7 @@
  * Return: string with all vowels changed
  */
 
-char leet(char *n)
+char *leet(char *n)
 {
 int i = 0; 
 int j;
