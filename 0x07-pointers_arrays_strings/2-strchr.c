@@ -12,7 +12,7 @@ int x = 0;
 int len = 0;
 
 while (s[len] != '\0')
-{	
+{
 	len++;
 }
 for (; x < len; x++)
@@ -21,6 +21,6 @@ for (; x < len; x++)
 	{
 		return (&s[x]);
 	}
-} 
+}
 return (0);
 }
