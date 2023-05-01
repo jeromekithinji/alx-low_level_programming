@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_listint2 – frees a linked list of integers and sets
+ * free_listint2 - frees a linked list of integers and sets
  *		sets the head to null
  *
  * @head: a double pointer to head node
