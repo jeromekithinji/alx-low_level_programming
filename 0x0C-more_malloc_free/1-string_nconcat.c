@@ -10,42 +10,30 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *concat;
-	int i, a = 0, lenS1 = 0, lenS2 = 0, totalLen = 0;
+	unsigned int a, b, c;
+	char *s;
 
 	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-	while (s1[lenS1] != '\0')
-		lenS1++;
-	while (s2[lenS2] != '\0')
-		lenS2++;
-	totalLen = lenS1 + lenS2;
-	concat = malloc((sizeof(char) * (totalLen)) + 1);
-	if (concat == NULL)
-		return (NULL);
-	if (n >= (unsigned int)lenS2)
-	{
-		for (i = 0; i < lenS1; i++)
-			concat[i] = s1[i];
-		for (i = lenS1; i < totalLen; i++)
-		{
-			concat[i] = s2[a];
-			a++;
-		}
-	}
+		a = 0;
 	else
-	{
-		totalLen = lenS1 + n;
-		for (i = 0; i < lenS1; i++)
-			concat[i] = s1[i];
-		for (i = lenS1; i < totalLen; i++)
-		{
-			concat[i] = s2[a];
-			a++;
-		}
-	}
-	return (concat);
-	free(concat);
+		for (a = 0; s1[a]; ++a);
+
+	if (s2 == NULL)
+		b = 0;
+	else
+		for (b = 0; s2[b]; ++b);
+	if (b > n)
+		b = n;
+	s = malloc(sizeof(char) * (a + b + 1));
+	
+	if (s == NULL)
+		return (NULL);
+	for (c = 0; c < a; c++)
+		s[c] = s1[c];
+	
+	for (c = 0; c < b; c++)
+		s[c + a] = s2[c];
+	
+	s[a + b] = '\0';
+	return (s);
 }
