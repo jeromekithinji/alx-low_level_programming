@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * *strr_concat - allocates memory for an array of @nmemb elements of
+ * *_calloc - allocates memory for an array of @nmemb elements of
  *		@size bytes each and returns pointer to the allocated memory
  *
  * @nmemb: allocated memory for array
