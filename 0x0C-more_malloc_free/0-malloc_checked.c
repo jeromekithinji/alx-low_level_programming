@@ -12,10 +12,10 @@
 void *malloc_checked(unsigned int b)
 {
 	void *memPtr;
-	
+
 	memPtr = malloc(b);
 	if (memPtr == NULL)
 		exit(98);
 
-	return memPtr;
+	return (memPtr);
 }
