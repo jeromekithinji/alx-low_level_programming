@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * listint_len - the number of elements in the 
- * 		given linked list, listint_t.
+ * listint_len - the number of elements in the
+ *		given linked list, listint_t.
  *
  * @h: the head pointer
  * Return: the number of elements in the linked list
