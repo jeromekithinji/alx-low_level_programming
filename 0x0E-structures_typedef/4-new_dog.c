@@ -22,7 +22,7 @@ int _strlen(char *s)
 
 /**
  * *_strcpy - copies the string pointed to by src parameter
- * 
+ *
  * @dest: pointer to the buffer in which we copy the string
  * @src: string to be copied
  *
@@ -62,7 +62,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	len1 = _strlen(name);
 	len2 = _strlen(owner);
 	dog = malloc(sizeof(dog_t));
-	
+
 	if (dog == NULL)
 		return (NULL);
 
@@ -72,7 +72,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog);
 		return (NULL);
 	}
-	
+
 	dog->owner = malloc(sizeof(char) * (len2 + 1));
 	if (dog->owner == NULL)
 	{
@@ -80,7 +80,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog->name);
 		return (NULL);
 	}
-	
+
 	_strcpy(dog->name, name);
 	_strcpy(dog->owner, owner);
 	dog->age = age;
