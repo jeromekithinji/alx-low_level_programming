@@ -4,7 +4,7 @@
 
 /**
   * op_add - ...
-  * @a: one number 
+  * @a: one number
   * @b: one number
   *
   * Return: solution
@@ -17,7 +17,7 @@ int op_add(int a, int b)
 
 /**
   * op_sub - ...
-  * @a: one number 
+  * @a: one number
   * @b: one number
   *
   * Return: solution
@@ -29,7 +29,7 @@ int op_sub(int a, int b)
 
 /**
   * op_mul - ...
-  * @a: one number 
+  * @a: one number
   * @b: one number
   *
   * Return: solution
@@ -42,7 +42,7 @@ int op_mul(int a, int b)
 
 /**
   * op_div - ...
-  * @a: one number 
+  * @a: one number
   * @b: one number
   *
   * Return: solution
@@ -61,7 +61,7 @@ int op_div(int a, int b)
 
 /**
   * op_mod - ...
-  * @a: one number 
+  * @a: one number
   * @b: one number
   *
   * Return: solution
